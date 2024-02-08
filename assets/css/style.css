@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #15191C;
+  background-color: #15191c;
   padding: 8px 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
@@ -35,17 +35,17 @@ body {
 .sidebar-menu {
   display: flex;
   flex-direction: column;
-  background-color: #15191C;
+  background-color: #15191c;
   width: 75vw;
   height: 100vh;
   position: absolute;
   left: -100vw;
-  transition: left .5s ease-in;
+  transition: left 0.5s ease-in;
 }
 
 .sidebar-menu--active {
   left: 0;
-  transition: left .5s ease-out;
+  transition: left 0.5s ease-out;
 }
 
 .sidebar-menu__logo {
@@ -56,7 +56,7 @@ body {
 
 .sidebar-menu__link {
   height: 64px;
-  color: #95999C;
+  color: #95999c;
   padding-left: 64px;
   display: flex;
   align-items: center;
@@ -72,9 +72,9 @@ body {
 }
 
 .sidebar-menu__link--active {
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 56px;
-  border-left: 8px solid #FFFFFF;
+  border-left: 8px solid #ffffff;
 }
 
 .sidebar-menu__link--init::before {
@@ -99,4 +99,83 @@ body {
 
 .sidebar-menu__link--paintings::before {
   content: "\e90a";
+}
+
+.main {
+  padding: 24px 16px;
+}
+
+.page-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #2c343a;
+}
+
+.card__content {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__emphasis {
+  grid-column: span 2;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  grid-column: span 2;
+}
+
+.card__profile {
+  color: #95999c;
+  font-size: 0.9rem;
+  grid-column: span 2;
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  color: #95999c;
+}
+
+.card__info--duration::before {
+  content: "\e90c";
+  margin-right: 8px;
+}
+
+.card__info--preview::before {
+  content: "\e90f";
+  margin-right: 8px;
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0480dc;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.card__button--play::before {
+  content: "\e90b";
+  font-size: 24px;
+}
+
+.card__button--emphasis {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.card__button--emphasis::before {
+  margin-right: 8px;
 }
